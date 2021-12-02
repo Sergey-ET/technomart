@@ -21,6 +21,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page-body">
@@ -33,7 +35,7 @@
         <button type="button" class="header-navbar-top-search-button">
           <img src="https://via.placeholder.com/17x17" alt="" width="17" height="17" />
         </button>
-        <input type="search" placeholder="Поиск:" />
+        <input class="header-navbar-top-input" type="search" placeholder="Поиск:" />
       </form>
       <ul class="header-navbar-top-list">
         <li class="header-navbar-top-item">
@@ -48,8 +50,8 @@
             <span>Корзина: 0</span>
           </a>
         </li>
-        <li class="header-navbar-top-item">
-          <a href="#" class="header-navbar-top-link">
+        <li class="header-navbar-top-item header-navbar-top-item-green">
+          <a href="#" class="header-navbar-top-link header-navbar-top-link-green">
             <span>Оформить заказ</span>
           </a>
         </li>
@@ -66,11 +68,11 @@
         <img src="https://via.placeholder.com/19x19" alt="" width="19" height="19" />+7 800
         555-86-28</a>
       <p class="header-details-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-      <a href="#" class="header-details-link header-details-link-profile">
+      <a href="#" class="header-details-link-profile">
         <img src="https://via.placeholder.com/20x18" alt="" width="20" height="18" />
         <span>Равшан Джамшутович</span>
       </a>
-      <a href="#" class="header-details-link header-details-link-logout">
+      <a href="#" class="header-details-link-logout">
         <img src="https://via.placeholder.com/20x17" alt="" width="20" height="17" />
       </a>
       <ul class="header-details-list">
@@ -102,7 +104,7 @@
       <h3 class="visually-hidden">Навигационная цепочка</h3>
       <ul class="breadcrumbs-list">
         <li class="breadcrumbs-item">
-          <a href="#" class="breadcrumbs-link">
+          <a href="./index.html" class="breadcrumbs-link-home">
             <img src="https://via.placeholder.com/14x12" alt="Домик" width="14" height="12" />
           </a>
         </li>
@@ -137,7 +139,10 @@
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form-block price-block">
           <legend class="form-block-title price-block-title">Цена:</legend>
-          <input class="price-block-range" type="range" min="0" max="30000" step="1000" value="25000" name="range" />
+          <div class="price-block-range-wrapper">
+            <input class="price-block-range" type="range" min="0" max="30000" step="1000" value="25000" name="range" />
+          </div>
+          <!-- /.price-block-range-wrapper -->
           <p class="price-block-group">
             <input class="price-block-field" type="text" value="0" name="range-from">
             <span class="price-block-dash">-</span>
@@ -183,7 +188,7 @@
             </li>
           </ul>
         </fieldset>
-        <button class="filter-form-button" type="submit">Показать</button>
+        <button class="pagination-link filter-form-button" type="submit">Показать</button>
       </form>
     </section>
 
@@ -213,152 +218,152 @@
     <section class="catalog">
       <h3 class="visually-hidden">Список перфораторов</h3>
       <ul class="catalog-list">
-        <li class="catalog-item catalog-item-1">
-          <img class="catalog-image catalog-image-big" src="./img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000"
-            width="144" height="128">
+        <li class="product-item catalog-item catalog-item-1">
+          <img class="product-image catalog-image catalog-image-big" src="./img/bosch-bfg-6000.jpg"
+            alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
           <img class="sticker catalog-sticker" src="./img/new.png" alt="Красная косая лента с надписью NEW" width="70"
             height="70">
-          <p class="catalog-button-group">
-            <button class="catalog-button-buy" type="button">
+          <p class="product-button-group catalog-button-group">
+            <button class="product-button-buy catalog-button-buy" type="button">
               <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
               Купить</button>
-            <button class="catalog-button-bookmark" type="button">В закладки</button>
+            <button class="product-button-bookmark catalog-button-bookmark" type="button">В закладки</button>
           </p>
-          <h4 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h4>
+          <h4 class="product-item-title catalog-item-title">Перфоратор BOSCH BFG 6000</h4>
           <span class="price-old catalog-price-old">30500 Р.</span>
           <span class="price-new catalog-price-new">25500 Р.</span>
         </li>
-        <li class="catalog-item catalog-item-2">
-          <img class="catalog-image catalog-image-big" src="./img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000"
-            width="144" height="128">
+        <li class="product-item catalog-item catalog-item-2">
+          <img class="product-image catalog-image catalog-image-big" src="./img/bosch-bfg-6000.jpg"
+            alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
           <img class="sticker catalog-sticker" src="./img/new.png" alt="Красная косая лента с надписью NEW" width="70"
             height="70">
-          <p class="catalog-button-group">
-            <button class="catalog-button-buy" type="button">
+          <p class="product-button-group catalog-button-group">
+            <button class="product-button-buy catalog-button-buy" type="button">
               <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
               Купить</button>
-            <button class="catalog-button-bookmark" type="button">В закладки</button>
+            <button class="product-button-bookmark catalog-button-bookmark" type="button">В закладки</button>
           </p>
-          <h4 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h4>
+          <h4 class="product-item-title catalog-item-title">Перфоратор BOSCH BFG 6000</h4>
           <span class="price-old catalog-price-old">30500 Р.</span>
           <span class="price-new catalog-price-new">25500 Р.</span>
         </li>
-        <li class="catalog-item catalog-item-3">
-          <img class="catalog-image catalog-image-big" src="/img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000"
-            width="144" height="128">
+        <li class="product-item catalog-item catalog-item-3">
+          <img class="product-image catalog-image catalog-image-big" src="/img/bosch-bfg-6000.jpg"
+            alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
           <img class="sticker catalog-sticker" src="/img/new.png" alt="Красная косая лента с надписью NEW" width="70"
             height="70">
-          <p class="catalog-button-group">
-            <button class="catalog-button-buy" type="button">
+          <p class="product-button-group catalog-button-group">
+            <button class="product-button-buy catalog-button-buy" type="button">
               <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
               Купить</button>
-            <button class="catalog-button-bookmark" type="button">В закладки</button>
+            <button class="product-button-bookmark catalog-button-bookmark" type="button">В закладки</button>
           </p>
-          <h4 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h4>
+          <h4 class="product-item-title catalog-item-title">Перфоратор BOSCH BFG 6000</h4>
           <span class="price-old catalog-price-old">30500 Р.</span>
           <span class="price-new catalog-price-new">25500 Р.</span>
         </li>
-        <li class="catalog-item catalog-item-4">
-          <img class="catalog-image" src="/img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127"
-            height="112">
+        <li class="product-item catalog-item catalog-item-4">
+          <img class="product-image catalog-image" src="/img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000"
+            width="127" height="112">
           <img class="sticker catalog-sticker" src="/img/new.png" alt="Красная косая лента с надписью NEW" width="70"
             height="70">
-          <p class="catalog-button-group">
-            <button class="catalog-button-buy" type="button">
+          <p class="product-button-group catalog-button-group">
+            <button class="product-button-buy catalog-button-buy" type="button">
               <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
               Купить</button>
-            <button class="catalog-button-bookmark" type="button">В закладки</button>
+            <button class="product-button-bookmark catalog-button-bookmark" type="button">В закладки</button>
           </p>
-          <h4 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h4>
+          <h4 class="product-item-title catalog-item-title">Перфоратор BOSCH BFG 3000</h4>
           <span class="price-old catalog-price-old">22500 Р.</span>
           <span class="price-new catalog-price-new">15500 Р.</span>
         </li>
-        <li class="catalog-item catalog-item-5">
-          <img class="catalog-image catalog-image-big" src="/img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000"
-            width="144" height="128">
+        <li class="product-item catalog-item catalog-item-5">
+          <img class="product-image catalog-image catalog-image-big" src="/img/bosch-bfg-6000.jpg"
+            alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
           <img class="sticker catalog-sticker" src="/img/new.png" alt="Красная косая лента с надписью NEW" width="70"
             height="70">
-          <p class="catalog-button-group">
-            <button class="catalog-button-buy" type="button">
+          <p class="product-button-group catalog-button-group">
+            <button class="product-button-buy catalog-button-buy" type="button">
               <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
               Купить</button>
-            <button class="catalog-button-bookmark" type="button">В закладки</button>
+            <button class="product-button-bookmark catalog-button-bookmark" type="button">В закладки</button>
           </p>
-          <h4 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h4>
+          <h4 class="product-item-title catalog-item-title">Перфоратор BOSCH BFG 6000</h4>
           <span class="price-old catalog-price-old">30500 Р.</span>
           <span class="price-new catalog-price-new">25500 Р.</span>
         </li>
-        <li class="catalog-item catalog-item-6">
-          <img class="catalog-image" src="/img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127"
-            height="112">
+        <li class="product-item catalog-item catalog-item-6">
+          <img class="product-image catalog-image" src="/img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000"
+            width="127" height="112">
           <img class="sticker catalog-sticker" src="/img/new.png" alt="Красная косая лента с надписью NEW" width="70"
             height="70">
-          <p class="catalog-button-group">
-            <button class="catalog-button-buy" type="button">
+          <p class="product-button-group catalog-button-group">
+            <button class="product-button-buy catalog-button-buy" type="button">
               <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
               Купить</button>
-            <button class="catalog-button-bookmark" type="button">В закладки</button>
+            <button class="product-button-bookmark catalog-button-bookmark" type="button">В закладки</button>
           </p>
-          <h4 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h4>
+          <h4 class="product-item-title catalog-item-title">Перфоратор BOSCH BFG 2000</h4>
           <span class="price-new catalog-price-new">12500 Р.</span>
         </li>
-        <li class="catalog-item catalog-item-7">
-          <img class="catalog-image" src="/img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127"
-            height="112">
+        <li class="product-item catalog-item catalog-item-7">
+          <img class="product-image catalog-image" src="/img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000"
+            width="127" height="112">
           <img class="sticker catalog-sticker" src="/img/new.png" alt="Красная косая лента с надписью NEW" width="70"
             height="70">
-          <p class="catalog-button-group">
-            <button class="catalog-button-buy" type="button">
+          <p class="product-button-group catalog-button-group">
+            <button class="product-button-buy catalog-button-buy" type="button">
               <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
               Купить</button>
-            <button class="catalog-button-bookmark" type="button">В закладки</button>
+            <button class="product-button-bookmark catalog-button-bookmark" type="button">В закладки</button>
           </p>
-          <h4 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h4>
+          <h4 class="product-item-title catalog-item-title">Перфоратор BOSCH BFG 3000</h4>
           <span class="price-old catalog-price-old">22500 Р.</span>
           <span class="price-new catalog-price-new">15500 Р.</span>
         </li>
-        <li class="catalog-item catalog-item-8">
-          <img class="catalog-image catalog-image-big" src="/img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000"
-            width="144" height="128">
+        <li class="product-item catalog-item catalog-item-8">
+          <img class="product-image catalog-image catalog-image-big" src="/img/bosch-bfg-6000.jpg"
+            alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
           <img class="sticker catalog-sticker" src="/img/new.png" alt="Красная косая лента с надписью NEW" width="70"
             height="70">
-          <p class="catalog-button-group">
-            <button class="catalog-button-buy" type="button">
+          <p class="product-button-group catalog-button-group">
+            <button class="product-button-buy catalog-button-buy" type="button">
               <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
               Купить</button>
-            <button class="catalog-button-bookmark" type="button">В закладки</button>
+            <button class="product-button-bookmark catalog-button-bookmark" type="button">В закладки</button>
           </p>
-          <h4 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h4>
+          <h4 class="product-item-title catalog-item-title">Перфоратор BOSCH BFG 6000</h4>
           <span class="price-old catalog-price-old">30500 Р.</span>
           <span class="price-new catalog-price-new">25500 Р.</span>
         </li>
-        <li class="catalog-item catalog-item-9">
-          <img class="catalog-image" src="/img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127"
-            height="112">
+        <li class="product-item catalog-item catalog-item-9">
+          <img class="product-image catalog-image" src="/img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000"
+            width="127" height="112">
           <img class="sticker catalog-sticker" src="/img/new.png" alt="Красная косая лента с надписью NEW" width="70"
             height="70">
-          <p class="catalog-button-group">
-            <button class="catalog-button-buy" type="button">
+          <p class="product-button-group catalog-button-group">
+            <button class="product-button-buy catalog-button-buy" type="button">
               <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
               Купить</button>
-            <button class="catalog-button-bookmark" type="button">В закладки</button>
+            <button class="product-button-bookmark catalog-button-bookmark" type="button">В закладки</button>
           </p>
-          <h4 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h4>
+          <h4 class="product-item-title catalog-item-title">Перфоратор BOSCH BFG 2000</h4>
           <span class="price-new catalog-price-new">12500 Р.</span>
         </li>
       </ul>
-      <ul class="catalog-button-list">
-        <li class="catalog-button-item">
-          <a class="catalog-button-link">1</a>
+      <ul class="pagination catalog-button-list">
+        <li class="pagination-item catalog-button-item">
+          <a class="pagination-link pagination-link-active catalog-button-link-active">1</a>
         </li>
-        <li class="catalog-button-item">
-          <a href="#" class="catalog-button-link">2</a>
+        <li class="pagination-item catalog-button-item">
+          <a href="#" class="pagination-link catalog-button-link">2</a>
         </li>
-        <li class="catalog-button-item">
-          <a href="#" class="catalog-button-link">3</a>
+        <li class="pagination-item catalog-button-item">
+          <a href="#" class="pagination-link catalog-button-link">3</a>
         </li>
-        <li class="catalog-button-item catalog-button-item-big">
-          <a href="#" class="catalog-button-link">Следующая</a>
+        <li class="pagination-item catalog-button-item">
+          <a href="#" class="pagination-link pagination-link-big catalog-button-link">Следующая</a>
         </li>
       </ul>
     </section>
@@ -379,11 +384,11 @@
         <img src="https://via.placeholder.com/220x68" alt="Логотип компании Техномарт" width="220" height="68" />
       </a>
       <ul class="footer-navbar-top-list">
-        <li class="footer-navbar-top-item">Компания</li>
-        <li class="footer-navbar-top-item">Новости</li>
-        <li class="footer-navbar-top-item">Каталог</li>
-        <li class="footer-navbar-top-item">Доставка</li>
-        <li class="footer-navbar-top-item">Контакты</li>
+        <li class="footer-navbar-top-item"><a class="footer-navbar-top-link" href="#">Компания</a></li>
+        <li class="footer-navbar-top-item"><a class="footer-navbar-top-link" href="#">Новости</a></li>
+        <li class="footer-navbar-top-item"><a class="footer-navbar-top-link" href="./catalog.html">Каталог</a></li>
+        <li class="footer-navbar-top-item"><a class="footer-navbar-top-link" href="#">Доставка</a></li>
+        <li class="footer-navbar-top-item"><a class="footer-navbar-top-link" href="#">Контакты</a></li>
       </ul>
     </nav>
 
@@ -393,10 +398,10 @@
         <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
       </p>
       <ul class="footer-navbar-bottom-list">
-        <li class="footer-navbar-bottom-item">Материалы</li>
-        <li class="footer-navbar-bottom-item">Техника</li>
-        <li class="footer-navbar-bottom-item">Инструмент</li>
-        <li class="footer-navbar-bottom-item">Спецпредложения</li>
+        <li class="footer-navbar-bottom-item"><a href="#" class="footer-navbar-bottom-link">Материалы</a></li>
+        <li class="footer-navbar-bottom-item"><a href="#" class="footer-navbar-bottom-link">Техника</a></li>
+        <li class="footer-navbar-bottom-item"><a href="#" class="footer-navbar-bottom-link">Инструмент</a></li>
+        <li class="footer-navbar-bottom-item"><a href="#" class="footer-navbar-bottom-link">Спецпредложения</a></li>
       </ul>
     </nav>
 
@@ -436,8 +441,11 @@
     <img class="modal-cart-image" src="https://via.placeholder.com/66x66"
       alt="Круглый знак галки белого цвета на зеленом фоне" width="66" height="66">
     <p class="modal-cart-text">Товар добавлен в корзину!</p>
-    <a class="button modal-cart-link" href="#">Оформить заказ</a>
-    <button class="button modal-cart-button" type="button">Продолжить покупки</button>
+    <div class="modal-button-wrapper">
+      <a class="button modal-cart-link" href="#">Оформить заказ</a>
+      <button class="catalog-button modal-cart-button" type="button">Продолжить покупки</button>
+    </div>
+    <!-- /.modal-button-wrapper -->
     <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>

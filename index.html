@@ -166,35 +166,63 @@
       <h2 class="popular-title">Популярные товары:</h2>
       <a class="button popular-button" href="#">все популярные товары</a>
       <ul class="popular-list">
-        <li class="popular-item popular-item-first">
-          <img class="popular-image" src="./img/bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184"
-            height="164" />
-          <h3 class="popular-item-title">Перфоратор BOSCH BFG 9000</h3>
+        <li class="product-item popular-item popular-item-first">
+          <img class="product-image popular-image" src="./img/bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000"
+            width="184" height="164" />
+          <img class="sticker popular-sticker" src="./img/new.png" alt="Красная косая лента с надписью NEW" width="70"
+            height="70">
+          <p class="product-button-group popular-button-group">
+            <button class="product-button-buy popular-button-buy" type="button">
+              <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
+              Купить</button>
+            <button class="product-button-bookmark popular-button-bookmark" type="button">В закладки</button>
+          </p>
+          <h3 class="product-item-title popular-item-title">Перфоратор BOSCH BFG 9000</h3>
           <span class="price-old popular-price-old">32500 Р.</span>
           <span class="price-new popular-price-new">25500 Р.</span>
         </li>
-        <li class="popular-item popular-item-second">
-          <img class="popular-image" src="./img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="184"
-            height="164" />
+        <li class="product-item popular-item popular-item-second">
+          <img class="product-image popular-image" src="./img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000"
+            width="184" height="164" />
           <img class="sticker popular-sticker" src="./img/new.png" alt="Красная лента с надписью NEW" width="70"
             height="70" />
-          <h3 class="popular-item-title">Перфоратор BOSCH BFG 3000</h3>
+          <p class="product-button-group popular-button-group">
+            <button class="product-button-buy popular-button-buy" type="button">
+              <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
+              Купить</button>
+            <button class="product-button-bookmark popular-button-bookmark" type="button">В закладки</button>
+          </p>
+          <h3 class="product-item-title popular-item-title">Перфоратор BOSCH BFG 3000</h3>
           <span class="price-old popular-price-old">22500 Р.</span>
           <span class="price-new popular-price-new">15500 Р.</span>
         </li>
-        <li class="popular-item popular-item-third">
-          <img class="popular-image" src="./img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144"
-            height="128" />
-          <h3 class="popular-item-title">Перфоратор BOSCH BFG 6000</h3>
+        <li class="product-item popular-item popular-item-third">
+          <img class="product-image popular-image" src="./img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000"
+            width="144" height="128" />
+          <img class="sticker popular-sticker" src="/img/new.png" alt="Красная косая лента с надписью NEW" width="70"
+            height="70">
+          <p class="product-button-group popular-button-group">
+            <button class="product-button-buy popular-button-buy" type="button">
+              <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
+              Купить</button>
+            <button class="product-button-bookmark popular-button-bookmark" type="button">В закладки</button>
+          </p>
+          <h3 class="product-item-title popular-item-title">Перфоратор BOSCH BFG 6000</h3>
           <span class="price-old popular-price-old">30500 Р.</span>
           <span class="price-new popular-price-new">25500 Р.</span>
         </li>
-        <li class="popular-item popular-item-fourth">
-          <img class="popular-image" src="./img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127"
-            height="112" />
+        <li class="product-item popular-item popular-item-fourth">
+          <img class="product-image popular-image" src="./img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000"
+            width="127" height="112" />
           <img class="sticker popular-sticker" src="./img/new.png" alt="Красная лента с надписью NEW" width="70"
             height="70" />
-          <h3 class="popular-item-title">Перфоратор BOSCH BFG 2000</h3>
+          <p class="product-button-group popular-button-group">
+            <button class="product-button-buy popular-button-buy" type="button">
+              <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
+              Купить</button>
+            <button class="product-button-bookmark popular-button-bookmark" type="button">В закладки</button>
+          </p>
+          <h3 class="product-item-title popular-item-title">Перфоратор BOSCH BFG 2000</h3>
           <span class="price-old popular-price-old">22500 Р.</span>
           <span class="price-new popular-price-new">12500 Р.</span>
         </li>
@@ -410,7 +438,10 @@
       <label class="feedback-label feedback-label-message" for="feedback-message">Текст письма:</label>
       <textarea class="feedback-input feedback-input-message" name="message" id="feedback-message"
         placeholder="В свободной форме" cols="30" rows="5"></textarea>
-      <button class="button modal-button" type="submit">Отправить</button>
+      <div class="modal-button-wrapper">
+        <button class="button modal-button" type="submit">Отправить</button>
+      </div>
+      <!-- /.modal-button-wrapper -->
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
