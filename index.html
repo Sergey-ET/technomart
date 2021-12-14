@@ -30,24 +30,19 @@
     <nav class="header-navbar header-navbar-top">
       <div class="container">
         <a href="./index.html" class="header-logo">
-          <img src="./img/logo-technomart-header.png" alt="Логотип компании Техномарт" width="220" height="47" />
+          <img src="./img/logo-technomart-header.svg" alt="Логотип компании Техномарт" width="108" height="18" />
         </a>
-        <form action="#" method="get" class="header-navbar-top-form">
-          <button type="button" class="header-navbar-top-search-button">
-            <img src="https://via.placeholder.com/17x17" alt="" width="17" height="17" />
-          </button>
-          <input class="header-navbar-top-input" type="search" placeholder="Поиск:" />
-        </form>
         <ul class="header-navbar-top-list">
           <li class="header-navbar-top-item">
+            <input class="header-navbar-top-input" type="search" placeholder="Поиск:" />
+          </li>
+          <li class="header-navbar-top-item header-navbar-top-bookmark">
             <a href="#" class="header-navbar-top-link">
-              <img src="https://via.placeholder.com/14x16" alt="Закладка" width="14" height="16" />
               <span>Закладки: 0</span>
             </a>
           </li>
-          <li class="header-navbar-top-item">
+          <li class="header-navbar-top-item header-navbar-top-cart">
             <a href="#" class="header-navbar-top-link">
-              <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15" />
               <span>Корзина: 0</span>
             </a>
           </li>
@@ -67,15 +62,14 @@
           строительных материалов <br />
           и инструментов для ремонта
         </h1>
-        <a href="tel:+78005558628" class="header-details-phone">
-          <img src="https://via.placeholder.com/19x19" alt="" width="19" height="19" />+7 800
-          555-86-28</a>
-        <p class="header-details-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-        <a href="#" class="header-details-button header-details-button-login">
-          <img src="https://via.placeholder.com/20x17" alt="" width="20" height="17" />
-          Войти
-        </a>
-        <a href="#" class="header-details-button header-details-button-registration">Регистрация</a>
+        <div class="header-details-contacts">
+          <a href="tel:+78005558628" class="header-details-phone">+7 800 555-86-28</a>
+          <span class="header-details-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</span>
+        </div>
+        <div class="header-details-buttons">
+          <a href="#" class="header-details-button header-details-button-login">Войти</a>
+          <a href="#" class="header-details-button header-details-button-registration">Регистрация</a>
+        </div>
       </div>
     </section>
 
@@ -103,31 +97,24 @@
         <div class="promo-item promo-item-materials">
           <h3 class="promo-title">Материалы</h3>
           <a href="#" class="promo-button">на любой вкус</a>
-          <img class="promo-image" src="https://via.placeholder.com/44x65" alt="Банка с краской" width="44"
-            height="65" />
-          <img class="sticker promo-sticker" src="https://via.placeholder.com/70x70" alt="Красная лента с надписью NEW"
-            width="70" height="70" />
+          <img class="sticker promo-sticker" src="./img/new.png" alt="Красная лента с надписью NEW" width="70"
+            height="70" />
         </div>
         <div class="promo-item promo-item-instruments">
           <h3 class="promo-title">Инструмент</h3>
           <a href="#" class="promo-button">на все случаи</a>
-          <img class="promo-image" src="https://via.placeholder.com/75x61" alt="Шуруповёрт" width="75" height="61" />
         </div>
         <div class="promo-item promo-item-technics">
           <h3 class="promo-title">Техника</h3>
           <a href="#" class="promo-button">для стройки</a>
-          <img class="promo-image" src="https://via.placeholder.com/78x62" alt="Трактор" width="78" height="62" />
         </div>
         <div class="promo-item promo-item-discounts">
           <h3 class="promo-title">Скидки 50%</h3>
           <a href="#" class="promo-button">на 350 товаров</a>
-          <img class="promo-image" src="https://via.placeholder.com/59x72" alt="Магазинная тележка с товарами"
-            width="59" height="72" />
         </div>
         <div class="promo-item promo-item-delivery">
           <h3 class="promo-title">Доставка</h3>
           <a href="#" class="promo-button">бесплатно</a>
-          <img class="promo-image" src="https://via.placeholder.com/78x63" alt="Фургон" width="78" height="63" />
         </div>
         <div class="promo-slider">
           <ul class="promo-slider-content">
@@ -182,9 +169,7 @@
             <img class="sticker popular-sticker" src="./img/new.png" alt="Красная косая лента с надписью NEW" width="70"
               height="70">
             <p class="product-button-group popular-button-group">
-              <button class="product-button-buy popular-button-buy" type="button">
-                <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
-                Купить</button>
+              <button class="product-button-buy popular-button-buy" type="button">Купить</button>
               <button class="product-button-bookmark popular-button-bookmark" type="button">В закладки</button>
             </p>
             <h3 class="product-item-title popular-item-title">Перфоратор BOSCH BFG 9000</h3>
@@ -197,9 +182,7 @@
             <img class="sticker popular-sticker" src="./img/new.png" alt="Красная лента с надписью NEW" width="70"
               height="70" />
             <p class="product-button-group popular-button-group">
-              <button class="product-button-buy popular-button-buy" type="button">
-                <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
-                Купить</button>
+              <button class="product-button-buy popular-button-buy" type="button">Купить</button>
               <button class="product-button-bookmark popular-button-bookmark" type="button">В закладки</button>
             </p>
             <h3 class="product-item-title popular-item-title">Перфоратор BOSCH BFG 3000</h3>
@@ -212,9 +195,7 @@
             <img class="sticker popular-sticker" src="/img/new.png" alt="Красная косая лента с надписью NEW" width="70"
               height="70">
             <p class="product-button-group popular-button-group">
-              <button class="product-button-buy popular-button-buy" type="button">
-                <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
-                Купить</button>
+              <button class="product-button-buy popular-button-buy" type="button">Купить</button>
               <button class="product-button-bookmark popular-button-bookmark" type="button">В закладки</button>
             </p>
             <h3 class="product-item-title popular-item-title">Перфоратор BOSCH BFG 6000</h3>
@@ -227,9 +208,7 @@
             <img class="sticker popular-sticker" src="./img/new.png" alt="Красная лента с надписью NEW" width="70"
               height="70" />
             <p class="product-button-group popular-button-group">
-              <button class="product-button-buy popular-button-buy" type="button">
-                <img src="https://via.placeholder.com/15x15" alt="Магазинная тележка" width="15" height="15">
-                Купить</button>
+              <button class="product-button-buy popular-button-buy" type="button">Купить</button>
               <button class="product-button-bookmark popular-button-bookmark" type="button">В закладки</button>
             </p>
             <h3 class="product-item-title popular-item-title">Перфоратор BOSCH BFG 2000</h3>
@@ -315,7 +294,6 @@
             <li class="services-tab">Гарантия</li>
             <li class="services-tab">Кредит</li>
           </ul>
-          <img class="services-tab-line" src="./img/tab-line.png" alt="">
           <ul class="services-content">
             <li class="service-content">
               <h3 class="service-title">Доставка</h3>
@@ -325,8 +303,6 @@
                 Ведь мы неплохо заработаем, <br />
                 поднимая его на ваш этаж!
               </p>
-              <img class="service-image" src="https://via.placeholder.com/468x261" alt="Грузовик" width="468"
-                height="261" />
             </li>
             <li class="service-content">
               <h3 class="service-title">Гарантия</h3>
@@ -337,8 +313,6 @@
                 гарантии. Мы обменяем сгоревший товар на новый. <br />
                 Дом уж восстановите как-нибудь сами.
               </p>
-              <img class="service-image" src="https://via.placeholder.com/389x283" alt="Золотая медаль с ленточками"
-                width="389" height="283" />
             </li>
             <li class="service-content">
               <h3 class="service-title">Кредит</h3>
@@ -346,8 +320,6 @@
                 Залезть в долговую яму стало проще! <br />
                 Кредитные консультанты придут вам на помощь.
               </p>
-              <img class="service-image" src="https://via.placeholder.com/465x285"
-                alt="Бумажные доллары на фоне договора" width="465" height="285" />
               <button class="button service-button" type="submit">Отправить заявку</button>
             </li>
           </ul>
@@ -359,25 +331,21 @@
     <div class="container index-columns">
       <section class="about">
         <h2 class="about-title">Компания «Техномарт»</h2>
-        <p class="about-info">
-          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
-          ремонта и строительства не оставит равнодушными любителей сэкономить
-          на гастарбайтерах.
-        </p>
-        <p class="about-info">
-          Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-          Техномарт работает со многими транспортными компаниями:
-        </p>
+        <div class="about-info-wrapper">
+          <p class="about-info">
+            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
+            ремонта и строительства не оставит равнодушными любителей сэкономить
+            на гастарбайтерах.
+          </p>
+          <p class="about-info">
+            Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+            Техномарт работает со многими транспортными компаниями:
+          </p>
+        </div>
         <ul class="about-list">
-          <li class="about-item">
-            <hr class="about-line">Деловые линии
-          </li>
-          <li class="about-item">
-            <hr class="about-line">Автотрейдинг
-          </li>
-          <li class="about-item">
-            <hr class="about-line">ЖелДорЭкспедиция
-          </li>
+          <li class="about-item">Деловые линии</li>
+          <li class="about-item">Автотрейдинг</li>
+          <li class="about-item">ЖелДорЭкспедиция</li>
         </ul>
         <a class="button about-button" href="#">Подробнее о компании</a>
       </section>
@@ -385,8 +353,7 @@
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
         <p class="contacts-info">Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img class="contacts-image" src="https://via.placeholder.com/300x158"
-          alt="Карта офиса по адресу: г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" width="300" height="158">
+        <a href="#" class="contacts-map"></a>
         <a class="button contacts-button" href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
@@ -430,17 +397,33 @@
         <ul class="footer-socials-list">
           <li class="footer-socials-item">
             <a class="footer-socials-link" href="https://vk.com/" target="_blank">
-              <img src="https://via.placeholder.com/44x44" alt="ВКонтакте" width="44" height="44" />
+              <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z" />
+                <path
+                  d="M24.5403 25.7281C25.4609 25.4384 26.6395 27.6406 27.8943 28.4834C28.836 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8232 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.3669 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7992 15.1128C22.388 15.0153 22.0876 14.9516 21.0389 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3575 15.9444C17.6079 15.9772 18.1693 16.0944 18.4697 16.4937C18.8559 17.0112 18.8443 18.1709 18.8443 18.1709C18.8443 18.1709 19.0649 21.3687 18.3243 21.7653C17.8159 22.0372 17.1206 21.4822 15.6252 18.9378C14.8615 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.73 15.6116 13.393 15.5562 13.393 15.5562L9.81656 15.5787C9.81656 15.5787 9.27923 15.5937 9.08182 15.8244C8.90656 16.0287 9.06738 16.4506 9.06738 16.4506C9.06738 16.4506 11.8686 22.9016 15.0406 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4338 28.6437C23.6495 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.61 26.0187 24.5403 25.7281Z"
+                  fill="white" />
+              </svg>
             </a>
           </li>
           <li class="footer-socials-item">
             <a class="footer-socials-link" href="https://ru-ru.facebook.com/" target="_blank">
-              <img src="https://via.placeholder.com/44x44" alt="Facebook" width="44" height="44" />
+              <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21.8938 1.4839C33.1232 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1232 42.1494 21.8938 42.1494C10.6643 42.1494 1.56108 33.0461 1.56108 21.8169C1.56108 10.5873 10.6643 1.4839 21.8938 1.4839Z" />
+                <path d="M28 15V11H24C21.7909 11 20 12.7909 20 15V19H16V23H20V33H24V23H28V19H24V15H28Z" fill="white" />
+              </svg>
             </a>
           </li>
           <li class="footer-socials-item">
             <a class="footer-socials-link" href="https://www.instagram.com/?hl=ru" target="_blank">
-              <img src="https://via.placeholder.com/44x44" alt="Instagram" width="44" height="44" />
+              <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21.8938 1.4839C33.1233 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1233 42.1494 21.8938 42.1494C10.6643 42.1494 1.56112 33.0461 1.56112 21.8169C1.56112 10.5873 10.6643 1.4839 21.8938 1.4839Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M14 11H29C30.65 11 32 12.35 32 14V29C32 30.65 30.65 32 29 32H14C12.35 32 11 30.65 11 29V14C11 12.35 12.35 11 14 11ZM25 21.5C25 19.57 23.43 18 21.5 18C19.57 18 18 19.57 18 21.5C18 23.43 19.57 25 21.5 25C23.43 25 25 23.43 25 21.5ZM14 29V20H15.181C15.0626 20.4913 15.0019 20.9947 15 21.5C15 25.0899 17.9101 28 21.5 28C25.0899 28 28 25.0899 28 21.5C27.9986 20.9946 27.9379 20.4912 27.819 20H29V29H14ZM25 18H29V14H25V18Z"
+                  fill="white" />
+              </svg>
             </a>
           </li>
         </ul>
@@ -450,7 +433,8 @@
         </p>
         <p class="footer-feedback-text-link">
           Разработано —
-          <a class="footer-feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          <a class="footer-feedback-link" href="https://htmlacademy.ru/intensive/htmlcss"
+            target="_blank">htmlacademy.ru</a>
         </p>
       </div>
     </section>
@@ -474,13 +458,13 @@
         <button class="button modal-button" type="submit">Отправить</button>
       </div>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close modal-close-feedback" type="button">Закрыть</button>
   </section>
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Карта расположения офиса</h2>
     <!-- Google Map -->
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close modal-close-map" type="button">Закрыть</button>
   </section>
 </body>
 
