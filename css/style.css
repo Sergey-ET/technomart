@@ -1778,11 +1778,12 @@ img {
   background-image: url(../img/icon-checkbox-dark.svg);
 }
 
-.manufacturer-block-checkbox + .manufacturer-block-name:active::before {
+.manufacturer-block-checkbox:disabled + .manufacturer-block-name::before {
   opacity: 0.3;
 }
 
-.manufacturer-block-checkbox:checked + .manufacturer-block-name:active::after {
+.manufacturer-block-checkbox:checked:disabled
+  + .manufacturer-block-name::after {
   opacity: 0.3;
 }
 
