@@ -1714,7 +1714,6 @@ img {
   background-image: url(../img/icon-checkbox-light.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  z-index: 1;
 }
 
 .energy-block-radio + .energy-block-name::before {
