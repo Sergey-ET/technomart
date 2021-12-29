@@ -48,9 +48,9 @@
               <span>Закладки: 0</span>
             </a>
           </li>
-          <li class="header-navbar-top-item header-navbar-top-cart">
+          <li class="header-navbar-top-item header-navbar-top-cart header-navbar-top-cart-active">
             <a href="#" class="header-navbar-top-link">
-              <span>Корзина: 0</span>
+              <span>Корзина: 10</span>
             </a>
           </li>
           <li class="header-navbar-top-item header-navbar-top-green">
@@ -116,6 +116,7 @@
           <li class="header-navbar-bottom-item"><a href="#" class="header-navbar-bottom-link">Доставка</a></li>
           <li class="header-navbar-bottom-item"><a href="#" class="header-navbar-bottom-link">Контакты</a></li>
         </ul>
+      </div>
     </nav>
   </header>
 
@@ -125,7 +126,14 @@
         <h3 class="visually-hidden">Навигационная цепочка</h3>
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
-            <a href="./index.html" class="breadcrumbs-link breadcrumbs-link-home"></a>
+            <a href="./index.html" class="breadcrumbs-link breadcrumbs-link-home">
+              <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z" fill="#C1C6CE" />
+                <path
+                  d="M13.831 6.365L12 4.751V0H10V2.987L7.33201 0.635C7.31201 0.618 7.28901 0.612 7.26801 0.598C7.24297 0.579705 7.21617 0.56396 7.18801 0.551C7.15711 0.540195 7.12532 0.532163 7.09301 0.527C7.06201 0.521 7.03201 0.515 7.00001 0.515C6.96901 0.515 6.93901 0.521 6.90801 0.527C6.87554 0.531919 6.84369 0.5403 6.81301 0.552C6.78501 0.563 6.76001 0.581 6.73301 0.598C6.71201 0.612 6.68801 0.618 6.66901 0.635L0.171006 6.365C0.0162706 6.50291 -0.0375648 6.72187 0.0355779 6.9158C0.108721 7.10974 0.293738 7.23862 0.501006 7.24C0.622937 7.24035 0.740742 7.19586 0.832006 7.115L7.00001 1.677L13.169 7.115C13.3778 7.27913 13.6784 7.25178 13.8542 7.05265C14.03 6.85352 14.0198 6.55183 13.831 6.365Z"
+                  fill="#C1C6CE" />
+              </svg>
+            </a>
           </li>
           <li class="breadcrumbs-item">
             <a href="./catalog.html" class="breadcrumbs-link breadcrumbs-link-catalog">Каталог</a>
@@ -227,7 +235,7 @@
           <h3 class="sorting-title">Сортировка:</h3>
           <ul class="sorting-list">
             <li class="sorting-item">
-              <a class="sorting-link">По цене</a>
+              <a class="sorting-link sorting-link-active">По цене</a>
             </li>
             <li class="sorting-item">
               <a class="sorting-link">По типу</a>
@@ -236,7 +244,7 @@
               <a class="sorting-link">По функционалу</a>
             </li>
           </ul>
-          <a class="sorting-button">
+          <a class="sorting-button sorting-button-active">
             <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.66241 0L11.1624 10L0.162415 10" />
             </svg>
@@ -251,7 +259,7 @@
         <section class="catalog">
           <h3 class="visually-hidden">Список перфораторов</h3>
           <ul class="catalog-list">
-            <li class="product-item catalog-item catalog-item-1">
+            <li class="product-item catalog-item">
               <img class="product-image catalog-image catalog-image-big" src="./img/bosch-bfg-6000.jpg"
                 alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
               <p class="product-button-group catalog-button-group">
@@ -262,7 +270,7 @@
               <span class="price-old catalog-price-old">30500 Р.</span>
               <span class="price-new catalog-price-new">25500 Р.</span>
             </li>
-            <li class="product-item catalog-item catalog-item-2">
+            <li class="product-item catalog-item">
               <img class="product-image catalog-image catalog-image-big" src="./img/bosch-bfg-6000.jpg"
                 alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
               <p class="product-button-group catalog-button-group">
@@ -273,7 +281,7 @@
               <span class="price-old catalog-price-old">30500 Р.</span>
               <span class="price-new catalog-price-new">25500 Р.</span>
             </li>
-            <li class="product-item catalog-item catalog-item-3">
+            <li class="product-item catalog-item catalog-item-new">
               <img class="product-image catalog-image catalog-image-big" src="/img/bosch-bfg-6000.jpg"
                 alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
               <p class="product-button-group catalog-button-group">
@@ -284,7 +292,7 @@
               <span class="price-old catalog-price-old">30500 Р.</span>
               <span class="price-new catalog-price-new">25500 Р.</span>
             </li>
-            <li class="product-item catalog-item catalog-item-4">
+            <li class="product-item catalog-item catalog-item-new">
               <img class="product-image catalog-image" src="/img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000"
                 width="127" height="112">
               <p class="product-button-group catalog-button-group">
@@ -295,7 +303,7 @@
               <span class="price-old catalog-price-old">22500 Р.</span>
               <span class="price-new catalog-price-new">15500 Р.</span>
             </li>
-            <li class="product-item catalog-item catalog-item-5">
+            <li class="product-item catalog-item">
               <img class="product-image catalog-image catalog-image-big" src="/img/bosch-bfg-6000.jpg"
                 alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
               <p class="product-button-group catalog-button-group">
@@ -306,7 +314,7 @@
               <span class="price-old catalog-price-old">30500 Р.</span>
               <span class="price-new catalog-price-new">25500 Р.</span>
             </li>
-            <li class="product-item catalog-item catalog-item-6">
+            <li class="product-item catalog-item catalog-item-new">
               <img class="product-image catalog-image" src="/img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000"
                 width="127" height="112">
               <p class="product-button-group catalog-button-group">
@@ -317,7 +325,7 @@
               <span class="price-old catalog-price-old price-old-empty">Нет данных</span>
               <span class="price-new catalog-price-new">12500 Р.</span>
             </li>
-            <li class="product-item catalog-item catalog-item-7">
+            <li class="product-item catalog-item catalog-item-new">
               <img class="product-image catalog-image" src="/img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000"
                 width="127" height="112">
               <p class="product-button-group catalog-button-group">
@@ -328,7 +336,7 @@
               <span class="price-old catalog-price-old">22500 Р.</span>
               <span class="price-new catalog-price-new">15500 Р.</span>
             </li>
-            <li class="product-item catalog-item catalog-item-8">
+            <li class="product-item catalog-item">
               <img class="product-image catalog-image catalog-image-big" src="/img/bosch-bfg-6000.jpg"
                 alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
               <p class="product-button-group catalog-button-group">
@@ -339,7 +347,7 @@
               <span class="price-old catalog-price-old">30500 Р.</span>
               <span class="price-new catalog-price-new">25500 Р.</span>
             </li>
-            <li class="product-item catalog-item catalog-item-9">
+            <li class="product-item catalog-item catalog-item-new">
               <img class="product-image catalog-image" src="/img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000"
                 width="127" height="112">
               <p class="product-button-group catalog-button-group">
