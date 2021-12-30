@@ -1342,7 +1342,7 @@ img {
 }
 
 .footer-feedback {
-  padding: 26px 0 21px 0;
+  padding: 33px 0 31px 0;
   background-color: var(--blue-500);
 }
 
@@ -1354,7 +1354,7 @@ img {
 
 .footer-copyright {
   margin: 0;
-  margin-right: 162px;
+  margin-right: 163px;
   min-width: 226px;
   font-size: 16px;
   line-height: 18px;
@@ -1363,16 +1363,18 @@ img {
 .footer-socials-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
-  margin-right: 120px;
   padding: 0;
-  padding-top: 9px;
-  width: 134px;
+  min-width: 134px;
   list-style: none;
 }
 
 .footer-socials-link {
+  display: block;
+  width: 44px;
+  height: 44px;
   fill: var(--blue-550);
 }
 
@@ -1383,6 +1385,7 @@ img {
 
 .footer-feedback-text-mail {
   margin: 0;
+  margin-left: 119px;
   margin-right: 53px;
   font-size: 16px;
   line-height: 18px;
