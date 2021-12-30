@@ -1887,8 +1887,10 @@ img {
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  -ms-grid-rows: 38px 28px 1fr;
-  grid-template-rows: 38px 1fr;
+  -ms-grid-rows: -webkit-min-content 28px 1fr;
+  -ms-grid-rows: min-content 28px 1fr;
+  grid-template-rows: -webkit-min-content 1fr;
+  grid-template-rows: min-content 1fr;
   row-gap: 28px;
 }
 .sorting-wrapper > :nth-child(1) {
@@ -1910,8 +1912,9 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-left: 19px;
-  padding-right: 17px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 7px 17px 7px 19px;
   background-color: var(--beige-150);
   border-radius: 2px;
 }
@@ -1926,24 +1929,24 @@ img {
   color: var(--black);
 }
 .sorting-list {
+  width: 354px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 46px 0 0;
   padding: 0;
   list-style: none;
 }
-.sorting-item:first-child {
-  margin-right: 70px;
-}
-.sorting-item:last-child {
-  margin-right: 28px;
-  margin-left: 66px;
-}
 .sorting-link {
+  display: block;
   font-family: "PT Sans", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1966,9 +1969,12 @@ img {
   opacity: 1;
 }
 .sorting-button {
-  margin-left: 19px;
+  display: block;
   fill: var(--gray-300);
   cursor: pointer;
+}
+.sorting-button-up {
+  margin-right: 20px;
 }
 .sorting-button-active {
   fill: var(--red-100);
