@@ -102,7 +102,8 @@ img {
   border: none;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--red-200);
 }
 
@@ -195,17 +196,23 @@ img {
   opacity: 1;
 }
 
+.header-navbar-top-item {
+  position: relative;
+}
+
 .header-navbar-top-link {
   display: block;
   padding: 9px 0;
+  width: 150px;
   color: inherit;
 }
 
 .header-navbar-top-bookmark {
-  position: relative;
   padding-left: 43px;
-  width: 150px;
-  cursor: pointer;
+}
+
+.header-navbar-top-cart {
+  padding-left: 49px;
 }
 
 .header-navbar-top-bookmark::before {
@@ -221,13 +228,6 @@ img {
   opacity: 0.3;
 }
 
-.header-navbar-top-cart {
-  position: relative;
-  padding-left: 49px;
-  width: 150px;
-  cursor: pointer;
-}
-
 .header-navbar-top-cart::before {
   content: "";
   position: absolute;
@@ -241,8 +241,13 @@ img {
   opacity: 0.3;
 }
 
+.header-navbar-top-cart-active::before {
+  left: 25px;
+}
+
 .header-navbar-top-bookmark-active,
 .header-navbar-top-cart-active {
+  padding-left: 47px;
   background-color: var(--red-100);
 }
 
@@ -253,7 +258,9 @@ img {
 }
 
 .header-navbar-top-bookmark:hover::before,
-.header-navbar-top-cart:hover::before {
+.header-navbar-top-cart:hover::before,
+.header-navbar-top-bookmark:focus::before,
+.header-navbar-top-cart:focus::before {
   opacity: 1;
 }
 
@@ -268,17 +275,17 @@ img {
   background-color: var(--blue-700);
 }
 
-.header-navbar-top-green {
-  width: 150px;
+.header-navbar-top-link-green {
   text-align: center;
   background-color: var(--green-300);
 }
 
-.header-navbar-top-green:hover {
+.header-navbar-top-link-green:hover,
+.header-navbar-top-link-green:focus {
   background-color: var(--green-200);
 }
 
-.header-navbar-top-green:active {
+.header-navbar-top-link-green:active {
   background-color: var(--green-300);
   color: var(--opacity-white-05);
 }
@@ -334,7 +341,8 @@ img {
   background-position: 0 0;
 }
 
-.header-details-phone:hover {
+.header-details-phone:hover,
+.header-details-phone:focus {
   color: var(--black);
 }
 
@@ -386,6 +394,14 @@ img {
   color: var(--red-100);
 }
 
+.header-details-login-link:focus {
+  color: var(--red-100);
+}
+
+.header-details-login-link:focus + .header-details-login-icon {
+  fill: var(--blue-300);
+}
+
 .header-details-button-login:hover .header-details-login-icon {
   fill: var(--blue-300);
 }
@@ -398,7 +414,8 @@ img {
   fill: var(--gray-300);
 }
 
-.header-details-button-registration:hover {
+.header-details-button-registration:hover,
+.header-details-button-registration:focus {
   color: var(--red-100);
 }
 
@@ -442,7 +459,8 @@ img {
   color: inherit;
 }
 
-.header-navbar-bottom-item:hover {
+.header-navbar-bottom-link:hover,
+.header-navbar-bottom-link:focus {
   background-color: var(--blue-500);
 }
 
@@ -488,19 +506,13 @@ img {
   cursor: pointer;
 }
 
-.promo-button:hover {
+.promo-button:hover,
+.promo-button:focus {
   background: var(--opacity-gray-100-03);
 }
 
 .promo-button:active {
   background: var(--opacity-gray-200-03);
-}
-
-.promo-image {
-  grid-column: 2 / 3;
-  grid-row: 1 / 3;
-  justify-self: center;
-  align-self: center;
 }
 
 .promo-item {
@@ -669,7 +681,8 @@ img {
   bottom: 27px;
 }
 
-.promo-slide-button:hover {
+.promo-slide-button:hover,
+.promo-slide-button:focus {
   background-color: var(--red-200);
 }
 
@@ -760,10 +773,6 @@ img {
   color: var(--blue-400);
 }
 
-.popular-button {
-  cursor: pointer;
-}
-
 .popular-list {
   display: grid;
   grid-template-columns: repeat(4, 220px);
@@ -784,6 +793,10 @@ img {
   padding: 0 18px 19px 18px;
   background-color: var(--white);
   border: 1px solid var(--gray-150);
+}
+
+.product-item-link {
+  display: block;
 }
 
 .popular-item-new::before {
@@ -813,7 +826,12 @@ img {
   line-height: 20px;
   text-align: center;
   color: var(--black);
-  cursor: pointer;
+}
+
+.product-item-title-link {
+  display: block;
+  padding: 2px 0;
+  color: var(--black);
 }
 
 .product-button-group {
@@ -850,7 +868,8 @@ img {
   opacity: 0.3;
 }
 
-.product-button-buy:hover {
+.product-button-buy:hover,
+.product-button-buy:focus {
   background: var(--green-200);
 }
 
@@ -871,7 +890,8 @@ img {
   cursor: pointer;
 }
 
-.product-button-bookmark:hover {
+.product-button-bookmark:hover,
+.product-button-bookmark:focus {
   border: 3px solid var(--blue-400);
 }
 
@@ -915,15 +935,18 @@ img {
   border-radius: 3px;
 }
 
-.product-item:hover {
+.product-item:hover,
+.product-item:focus {
   filter: drop-shadow(0px 4px 20px var(--opacity-black-015));
 }
 
-.product-item:hover .product-image {
+.product-item:hover .product-image,
+.product-item:focus-within .product-image {
   display: none;
 }
 
-.product-item:hover .product-button-group {
+.product-item:hover .product-button-group,
+.product-item:focus-within .product-button-group {
   display: flex;
   margin-top: 38px;
 }
@@ -1048,7 +1071,8 @@ img {
   cursor: pointer;
 }
 
-.services-tab:hover:not(.services-tab-active) {
+.services-tab:hover:not(.services-tab-active),
+.services-tab:focus:not(.services-tab-active) {
   background-color: var(--blue-500);
 }
 
@@ -1252,12 +1276,14 @@ img {
 }
 
 .footer-navbar-top {
-  padding-bottom: 15px;
+  padding-bottom: 22px;
   background-color: var(--blue-400);
 }
 
 .footer-logo {
+  display: block;
   margin-right: auto;
+  height: 68px;
 }
 
 .footer-navbar-top-list {
@@ -1266,7 +1292,7 @@ img {
   flex-wrap: wrap;
   row-gap: 10px;
   margin: 0;
-  margin-top: 23px;
+  margin-top: 30px;
   padding: 0;
   width: 546px;
   list-style: none;
@@ -1277,8 +1303,8 @@ img {
 }
 
 .footer-navbar-top-link {
+  display: block;
   color: var(--blue-150);
-  cursor: pointer;
 }
 
 .footer-navbar-top-link:hover {
@@ -1342,7 +1368,7 @@ img {
 }
 
 .footer-feedback {
-  padding: 33px 0 31px 0;
+  padding: 32px 0 31px 0;
   background-color: var(--blue-500);
 }
 
@@ -1423,7 +1449,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 4px;
-  padding: 12px 17px 12px 14px;
+  padding: 6px 17px 6px 14px;
   background-color: var(--white);
 }
 
@@ -1431,13 +1457,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 6px 0;
   width: 227px;
   font-size: 21px;
   line-height: 21px;
   color: var(--black);
 }
 
-.header-details-link-profile:hover path {
+.header-details-link-profile:hover path,
+.header-details-link-profile:focus path {
   fill: var(--blue-300);
 }
 
@@ -1447,9 +1475,11 @@ img {
 
 .header-details-link-logout {
   display: flex;
+  padding: 6px 0;
 }
 
-.header-details-link-logout:hover path {
+.header-details-link-logout:hover path,
+.header-details-link-logout:focus path {
   fill: var(--blue-300);
 }
 
@@ -1485,7 +1515,8 @@ img {
   border-radius: 50%;
 }
 
-.header-details-link:hover {
+.header-details-link:hover,
+.header-details-link:focus {
   color: var(--red-100);
 }
 
@@ -1538,7 +1569,8 @@ img {
   color: var(--gray-300);
 }
 
-.breadcrumbs-link-home:hover path {
+.breadcrumbs-link-home:hover path,
+.breadcrumbs-link-home:focus path {
   fill: var(--blue-300);
 }
 
@@ -1759,6 +1791,10 @@ img {
   border-radius: 3px;
 }
 
+.manufacturer-block-checkbox:focus + .manufacturer-block-name::before {
+  outline: 5px auto var(--black);
+}
+
 .manufacturer-block-checkbox:checked + .manufacturer-block-name::after {
   content: "";
   position: absolute;
@@ -1772,6 +1808,10 @@ img {
   background-position: 0 0;
 }
 
+.manufacturer-block-checkbox:checked:focus + .manufacturer-block-name::after {
+  background-image: url(../img/icon-checkbox-black.svg);
+}
+
 .energy-block-radio + .energy-block-name::before {
   content: "";
   position: absolute;
@@ -1783,6 +1823,10 @@ img {
   border-radius: 50%;
 }
 
+.energy-block-radio:focus + .energy-block-name::before {
+  border: 4px solid var(--black);
+}
+
 .energy-block-radio:checked + .energy-block-name::after {
   content: "";
   position: absolute;
@@ -1792,6 +1836,10 @@ img {
   height: 9px;
   background-color: var(--gray-300);
   border-radius: 50%;
+}
+
+.energy-block-radio:checked:focus + .energy-block-name::after {
+  background-color: var(--black);
 }
 
 .energy-block-list {
@@ -2222,7 +2270,8 @@ img {
   cursor: pointer;
 }
 
-.modal-close:hover path {
+.modal-close:hover path,
+.modal-close:focus path {
   fill: var(--red-200);
 }
 .modal-close:active path {
