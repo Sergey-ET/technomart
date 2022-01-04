@@ -30,14 +30,15 @@
     <nav class="header-navbar header-navbar-top">
       <div class="container">
         <a href="./index.html" class="header-logo">
-          <img src="./img/logo-technomart-header.svg" alt="Логотип компании Техномарт" width="108" height="18" />
+          <img src="./img/logo-technomart-header.svg" alt="Логотип компании Техномарт." width="108" height="18" />
         </a>
         <ul class="header-navbar-top-list">
           <li class="header-navbar-top-item header-navbar-top-search">
             <form action="#" method="get" class="header-navbar-top-form">
-              <input class="header-navbar-top-input" type="search" placeholder="Поиск:" />
+              <label class="visually-hidden" for="search">Поиск</label>
+              <input class="header-navbar-top-input" id="search" type="search" name="search" placeholder="Поиск:" />
               <svg class="search-icon" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true">
+                aria-hidden="true" focusable="false">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" />
               </svg>
@@ -71,14 +72,15 @@
           и инструментов для ремонта
         </h1>
         <div class="header-details-contacts">
-          <a href="tel:+78005558628" class="header-details-phone">+7 800 555-86-28</a>
+          <a href="tel:+78005558628" class="header-details-phone" aria-label="Позвонить по телефону">+7 800
+            555-86-28</a>
           <span class="header-details-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</span>
         </div>
         <div class="header-details-buttons">
           <div class="header-details-button-login">
             <a href="#" class="header-details-login-link">Войти</a>
             <svg class="header-details-login-icon" width="20" height="17" viewBox="0 0 20 17"
-              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
               <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" />
               <path
                 d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z" />
@@ -180,11 +182,13 @@
         </div>
         <ul class="popular-list">
           <li class="product-item popular-item" tabindex="0">
-            <img class="product-image popular-image" src="./img/bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000"
+            <img class="product-image popular-image" src="./img/bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000."
               width="184" height="164" />
             <p class="product-button-group popular-button-group">
-              <button class="product-button-buy popular-button-buy" type="button">Купить</button>
-              <button class="product-button-bookmark popular-button-bookmark" type="button">В закладки</button>
+              <button class="product-button-buy popular-button-buy" type="button"
+                aria-label="Добавить перфоратор BOSCH BFG 9000 в корзину">Купить</button>
+              <button class="product-button-bookmark popular-button-bookmark" type="button"
+                aria-label="Добавить перфоратор BOSCH BFG 9000 в закладки">В закладки</button>
             </p>
             <h3 class="product-item-title popular-item-title">
               <a href="#" class="product-item-title-link">Перфоратор BOSCH BFG 9000</a>
@@ -193,11 +197,13 @@
             <span class="price-new popular-price-new">25500 Р.</span>
           </li>
           <li class="product-item popular-item popular-item-new" tabindex="0">
-            <img class="product-image popular-image" src="./img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000"
+            <img class="product-image popular-image" src="./img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000."
               width="127" height="112" />
             <p class="product-button-group popular-button-group">
-              <button class="product-button-buy popular-button-buy" type="button">Купить</button>
-              <button class="product-button-bookmark popular-button-bookmark" type="button">В закладки</button>
+              <button class="product-button-buy popular-button-buy" type="button"
+                aria-label="Добавить перфоратор BOSCH BFG 3000 в корзину">Купить</button>
+              <button class="product-button-bookmark popular-button-bookmark" type="button"
+                aria-label="Добавить перфоратор BOSCH BFG 3000 в закладки">В закладки</button>
             </p>
             <h3 class="product-item-title popular-item-title">
               <a href="#" class="product-item-title-link">Перфоратор BOSCH BFG 3000</a>
@@ -206,11 +212,13 @@
             <span class="price-new popular-price-new">15500 Р.</span>
           </li>
           <li class="product-item popular-item" tabindex="0">
-            <img class="product-image popular-image" src="./img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000"
+            <img class="product-image popular-image" src="./img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000."
               width="144" height="128" />
             <p class="product-button-group popular-button-group">
-              <button class="product-button-buy popular-button-buy" type="button">Купить</button>
-              <button class="product-button-bookmark popular-button-bookmark" type="button">В закладки</button>
+              <button class="product-button-buy popular-button-buy" type="button"
+                aria-label="Добавить перфоратор BOSCH BFG 6000 в корзину">Купить</button>
+              <button class="product-button-bookmark popular-button-bookmark" type="button"
+                aria-label="Добавить перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
             </p>
             <h3 class="product-item-title popular-item-title">
               <a href="#" class="product-item-title-link">Перфоратор BOSCH BFG 6000</a>
@@ -219,11 +227,13 @@
             <span class="price-new popular-price-new">25500 Р.</span>
           </li>
           <li class="product-item popular-item popular-item-new" tabindex="0">
-            <img class="product-image popular-image" src="./img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000"
+            <img class="product-image popular-image" src="./img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000."
               width="127" height="112" />
             <p class="product-button-group popular-button-group">
-              <button class="product-button-buy popular-button-buy" type="button">Купить</button>
-              <button class="product-button-bookmark popular-button-bookmark" type="button">В закладки</button>
+              <button class="product-button-buy popular-button-buy" type="button"
+                aria-label="Добавить перфоратор BOSCH BFG 2000 в корзину">Купить</button>
+              <button class="product-button-bookmark popular-button-bookmark" type="button"
+                aria-label="Добавить перфоратор BOSCH BFG 2000 в закладки">В закладки</button>
             </p>
             <h3 class="product-item-title popular-item-title">
               <a href="#" class="product-item-title-link">Перфоратор BOSCH BFG 2000</a>
@@ -244,49 +254,49 @@
         <ul class="manufacturer-list">
           <li class="manufacturer-item">
             <a class="manufacturer-link" href="https://www.bosch.ru/" target="_blank">
-              <img class="manufacturer-image" src="./img/logo-bosch.png" alt="Логотип компании Bosch" width="126"
+              <img class="manufacturer-image" src="./img/logo-bosch.png" alt="Логотип компании Bosch." width="126"
                 height="37" />
             </a>
           </li>
           <li class="manufacturer-item">
             <a class="manufacturer-link" href="https://www.makita.ru/" target="_blank">
-              <img class="manufacturer-image" src="./img/logo-makita.png" alt="Логотип компании Makita" width="123"
+              <img class="manufacturer-image" src="./img/logo-makita.png" alt="Логотип компании Makita." width="123"
                 height="40" />
             </a>
           </li>
           <li class="manufacturer-item">
             <a class="manufacturer-link" href="https://ru.dewalt.global/" target="_blank">
-              <img class="manufacturer-image" src="./img/logo-dewalt.png" alt="Логотип компании DeWalt" width="146"
+              <img class="manufacturer-image" src="./img/logo-dewalt.png" alt="Логотип компании DeWalt." width="146"
                 height="44" />
             </a>
           </li>
           <li class="manufacturer-item">
             <a class="manufacturer-link" href="https://www.interskol.ru/" target="_blank">
-              <img class="manufacturer-image" src="./img/logo-interskol.png" alt="Логотип компании Интерскол"
+              <img class="manufacturer-image" src="./img/logo-interskol.png" alt="Логотип компании Интерскол."
                 width="200" height="75" />
             </a>
           </li>
           <li class="manufacturer-item">
             <a class="manufacturer-link" href="https://www.hitachi.ru/ru" target="_blank">
-              <img class="manufacturer-image" src="./img/logo-hitachi.png" alt="Логотип компании Hitachi" width="169"
+              <img class="manufacturer-image" src="./img/logo-hitachi.png" alt="Логотип компании Hitachi." width="169"
                 height="31" />
             </a>
           </li>
           <li class="manufacturer-item">
             <a class="manufacturer-link" href="https://www.lg.com/ru" target="_blank">
-              <img class="manufacturer-image" src="./img/logo-lg.png" alt="Логотип компании LG" width="121"
+              <img class="manufacturer-image" src="./img/logo-lg.png" alt="Логотип компании LG." width="121"
                 height="73" />
             </a>
           </li>
           <li class="manufacturer-item">
             <a class="manufacturer-link" href="http://www.aeg-russia.ru/" target="_blank">
-              <img class="manufacturer-image" src="./img/logo-aeg.png" alt="Логотип компании AEG" width="151"
+              <img class="manufacturer-image" src="./img/logo-aeg.png" alt="Логотип компании AEG." width="151"
                 height="98" />
             </a>
           </li>
           <li class="manufacturer-item">
             <a class="manufacturer-link" href="https://www.metabo.com/ru/ru/" target="_blank">
-              <img class="manufacturer-image" src="./img/logo-metabo.png" alt="Логотип компании Metabo" width="206"
+              <img class="manufacturer-image" src="./img/logo-metabo.png" alt="Логотип компании Metabo." width="206"
                 height="73" />
             </a>
           </li>
@@ -336,7 +346,8 @@
                 Залезть в долговую яму стало проще! <br />
                 Кредитные консультанты придут вам на помощь.
               </p>
-              <button class="button service-button" type="submit">Отправить заявку</button>
+              <button class="button service-button" type="submit" aria-label="Отправить заявку на кредит">Отправить
+                заявку</button>
             </li>
           </ul>
         </div>
@@ -369,8 +380,9 @@
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
         <p class="contacts-info">Вы можете забрать товар сами, заехав в наш офис:</p>
-        <button class="contacts-map" type="button"></button>
-        <button class="button contacts-button" type="button">Заблудились? Напишите нам!</button>
+        <button class="contacts-map" type="button" aria-label="Открыть интерактивную карту в новом окне"></button>
+        <button class="button contacts-button" type="button" aria-label="Открыть форму обратной связи">Заблудились?
+          Напишите нам!</button>
       </section>
     </div>
   </main>
@@ -379,7 +391,7 @@
     <nav class="footer-navbar footer-navbar-top">
       <div class="container">
         <a class="footer-logo" href="./index.html">
-          <img src="./img/logo-technomart-footer.png" alt="Логотип компании Техномарт" width="220" height="68" />
+          <img src="./img/logo-technomart-footer.png" alt="Логотип компании Техномарт." width="220" height="68" />
         </a>
         <ul class="footer-navbar-top-list">
           <li class="footer-navbar-top-item">
@@ -432,7 +444,8 @@
           <li class="footer-socials-item">
             <a class="footer-socials-link" href="https://vk.com/" target="_blank">
               <span class="visually-hidden">Вконтакте</span>
-              <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                focusable="false">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z" />
                 <path
@@ -444,7 +457,8 @@
           <li class="footer-socials-item">
             <a class="footer-socials-link" href="https://ru-ru.facebook.com/" target="_blank">
               <span class="visually-hidden">Фейсбук</span>
-              <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                focusable="false">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M21.8938 1.4839C33.1232 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1232 42.1494 21.8938 42.1494C10.6643 42.1494 1.56108 33.0461 1.56108 21.8169C1.56108 10.5873 10.6643 1.4839 21.8938 1.4839Z" />
                 <path d="M28 15V11H24C21.7909 11 20 12.7909 20 15V19H16V23H20V33H24V23H28V19H24V15H28Z" fill="white" />
@@ -454,7 +468,8 @@
           <li class="footer-socials-item">
             <a class="footer-socials-link" href="https://www.instagram.com/?hl=ru" target="_blank">
               <span class="visually-hidden">Инстаграм</span>
-              <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                focusable="false">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M21.8938 1.4839C33.1233 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1233 42.1494 21.8938 42.1494C10.6643 42.1494 1.56112 33.0461 1.56112 21.8169C1.56112 10.5873 10.6643 1.4839 21.8938 1.4839Z" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -492,11 +507,12 @@
       <textarea class="feedback-input feedback-input-message" name="message" id="feedback-message"
         placeholder="В свободной форме" cols="30" rows="5"></textarea>
       <div class="modal-button-wrapper">
-        <button class="button modal-button" type="submit">Отправить</button>
+        <button class="button modal-button" type="submit" aria-label="Отправить заполненную форму">Отправить</button>
       </div>
     </form>
     <button class="modal-close modal-close-feedback" type="button" aria-label="Закрыть">
-      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+        focusable="false">
         <path
           d="M13.2729 10.4999L20.6949 3.07793C21.0839 2.68893 21.0839 2.05293 20.6949 1.66393L19.3359 0.304934C18.9469 -0.0840664 18.3109 -0.0840664 17.9219 0.304934L10.4999 7.72693L3.07793 0.304934C2.68893 -0.0840664 2.05293 -0.0840664 1.66393 0.304934L0.304934 1.66393C-0.0840664 2.05293 -0.0840664 2.68893 0.304934 3.07793L7.72693 10.4999L0.305934 17.9219C-0.0830664 18.3109 -0.0830664 18.9469 0.305934 19.3359L1.66493 20.6949C2.05393 21.0839 2.68993 21.0839 3.07893 20.6949L10.5009 13.2729L17.9229 20.6949C18.3119 21.0839 18.9479 21.0839 19.3369 20.6949L20.6959 19.3359C21.0849 18.9469 21.0849 18.3109 20.6959 17.9219L13.2729 10.4999Z"
           fill="#EE3643" />
@@ -511,7 +527,8 @@
       width="943" height="449" style="border:0;" allowfullscreen="" loading="lazy"
       title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
     <button class="modal-close modal-close-map" type="button" aria-label="Закрыть">
-      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+        focusable="false">
         <path
           d="M13.2729 10.4999L20.6949 3.07793C21.0839 2.68893 21.0839 2.05293 20.6949 1.66393L19.3359 0.304934C18.9469 -0.0840664 18.3109 -0.0840664 17.9219 0.304934L10.4999 7.72693L3.07793 0.304934C2.68893 -0.0840664 2.05293 -0.0840664 1.66393 0.304934L0.304934 1.66393C-0.0840664 2.05293 -0.0840664 2.68893 0.304934 3.07793L7.72693 10.4999L0.305934 17.9219C-0.0830664 18.3109 -0.0830664 18.9469 0.305934 19.3359L1.66493 20.6949C2.05393 21.0839 2.68993 21.0839 3.07893 20.6949L10.5009 13.2729L17.9229 20.6949C18.3119 21.0839 18.9479 21.0839 19.3369 20.6949L20.6959 19.3359C21.0849 18.9469 21.0849 18.3109 20.6959 17.9219L13.2729 10.4999Z"
           fill="#EE3643" />

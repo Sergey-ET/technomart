@@ -23,6 +23,7 @@
   --gray-350: #b5b5b5;
   --gray-375: #ababab;
   --gray-400: #a9a9a9;
+  --gray-500: #757575;
   --lilac: #dc91d8;
   --opacity-black-015: rgba(0, 0, 0, 0.15);
   --opacity-black-024: rgba(0, 0, 0, 0.24);
@@ -931,7 +932,7 @@ img {
   -webkit-text-decoration-line: line-through;
   text-decoration-line: line-through;
   text-transform: uppercase;
-  color: var(--gray-400);
+  color: var(--gray-500);
 }
 .price-old-empty {
   visibility: hidden;
