@@ -2337,13 +2337,14 @@ img {
 .modal-cart-button {
   margin-left: 10px;
   padding: 10px 31px 8px 32px;
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 18px;
   text-transform: uppercase;
   border: 1px solid transparent;
+  color: var(--black);
   background-color: var(--white);
   cursor: pointer;
   box-sizing: content-box;
