@@ -29,6 +29,92 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+const sliderPromoButtonForward = document.querySelector(
+  ".promo-slider-button-forward"
+);
+const sliderPromoButtonBack = document.querySelector(
+  ".promo-slider-button-back"
+);
+const sliderPromoSlideFirst = document.querySelector(".promo-slide-first");
+const sliderPromoSlideSecond = document.querySelector(".promo-slide-second");
+const sliderPromoPaginationFirst = document.querySelector(
+  ".promo-slider-pagination-button-first"
+);
+const sliderPromoPaginationSecond = document.querySelector(
+  ".promo-slider-pagination-button-second"
+);
+
+sliderPromoButtonForward.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  sliderPromoSlideFirst.classList.toggle("promo-slide-current");
+  sliderPromoSlideSecond.classList.toggle("promo-slide-current");
+  sliderPromoPaginationFirst.classList.toggle(
+    "promo-slider-pagination-current"
+  );
+  sliderPromoPaginationSecond.classList.toggle(
+    "promo-slider-pagination-current"
+  );
+});
+
+sliderPromoButtonBack.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  sliderPromoSlideFirst.classList.toggle("promo-slide-current");
+  sliderPromoSlideSecond.classList.toggle("promo-slide-current");
+  sliderPromoPaginationFirst.classList.toggle(
+    "promo-slider-pagination-current"
+  );
+  sliderPromoPaginationSecond.classList.toggle(
+    "promo-slider-pagination-current"
+  );
+});
+
+const sliderServicesTabDelivery = document.querySelector(
+  ".services-tab-delivery"
+);
+const sliderServicesTabGuarantee = document.querySelector(
+  ".services-tab-guarantee"
+);
+const sliderServicesTabCredit = document.querySelector(".services-tab-credit");
+const sliderServicesContentDelivery = document.querySelector(
+  ".service-content-delivery"
+);
+const sliderServicesContentGuarantee = document.querySelector(
+  ".service-content-guarantee"
+);
+const sliderServicesContentCredit = document.querySelector(
+  ".service-content-credit"
+);
+
+sliderServicesTabDelivery.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  sliderServicesTabCredit.classList.remove("services-tab-active");
+  sliderServicesContentCredit.classList.remove("service-content-active");
+  sliderServicesTabGuarantee.classList.remove("services-tab-active");
+  sliderServicesContentGuarantee.classList.remove("service-content-active");
+  sliderServicesTabDelivery.classList.add("services-tab-active");
+  sliderServicesContentDelivery.classList.add("service-content-active");
+});
+
+sliderServicesTabGuarantee.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  sliderServicesTabDelivery.classList.remove("services-tab-active");
+  sliderServicesContentDelivery.classList.remove("service-content-active");
+  sliderServicesTabCredit.classList.remove("services-tab-active");
+  sliderServicesContentCredit.classList.remove("service-content-active");
+  sliderServicesTabGuarantee.classList.add("services-tab-active");
+  sliderServicesContentGuarantee.classList.add("service-content-active");
+});
+
+sliderServicesTabCredit.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  sliderServicesTabDelivery.classList.remove("services-tab-active");
+  sliderServicesContentDelivery.classList.remove("service-content-active");
+  sliderServicesTabGuarantee.classList.remove("services-tab-active");
+  sliderServicesContentGuarantee.classList.remove("service-content-active");
+  sliderServicesTabCredit.classList.add("services-tab-active");
+  sliderServicesContentCredit.classList.add("service-content-active");
+});
+
 const feedbackButton = document.querySelector(".contacts-button");
 const feedbackPopup = document.querySelector(".modal-feedback");
 const feedbackClose = feedbackPopup.querySelector(".modal-close");
