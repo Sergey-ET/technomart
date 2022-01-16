@@ -1,7 +1,7 @@
-# Техномарт
+# E-shop "Technomart"
 
-Учебный проект на курсе Профессия «Фронтенд-разработчик», HTML Academy
+Training project on course Profession "Frontend Developer", HTML Academy
 
-# Проект выполняет
+# Project completed by
 
-Трошкин Сергей
+Sergey Troshkin
