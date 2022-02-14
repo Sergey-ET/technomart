@@ -1283,8 +1283,14 @@ img {
 
 .footer-logo {
   display: block;
-  margin-right: auto;
+  width: 220px;
   height: 68px;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  text-align: center;
+  background-color: var(--red-100);
+  box-shadow: inset 0px -5px 0px var(--opacity-black-024);
 }
 
 .footer-navbar-top-list {
