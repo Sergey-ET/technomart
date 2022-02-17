@@ -307,6 +307,7 @@ img {
   margin: 0;
   margin-right: 86px;
   font-style: italic;
+  font-weight: normal;
   font-size: 16px;
   line-height: 23px;
   color: var(--red-100);
