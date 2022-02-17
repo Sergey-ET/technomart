@@ -6,6 +6,7 @@
   --blue-150: #f1f5f7;
   --blue-200: #3bbce3;
   --blue-300: #3d546f;
+  --blue-350: #405069;
   --blue-400: #32425c;
   --blue-500: #293449;
   --blue-550: #212a3a;
@@ -1045,11 +1046,12 @@ img {
 }
 
 .services-tabs {
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
-  margin-right: 80px;
+  row-gap: 1px;
   width: 240px;
+  margin-right: 80px;
 }
 
 .services-tabs::after {
@@ -1064,7 +1066,7 @@ img {
 }
 
 .services-tab {
-  padding: 14px 0 18px 22px;
+  padding: 14px 0 17px 22px;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -1072,6 +1074,7 @@ img {
   color: var(--white);
   background-color: var(--blue-400);
   border: none;
+  box-shadow: 0px 1px 0px var(--blue-500), inset 0px 1px 0px var(--blue-350);
   cursor: pointer;
 }
 
