@@ -399,7 +399,7 @@ img {
   color: var(--red-100);
 }
 
-.header-details-login-link:focus + .header-details-login-icon {
+.header-details-login-link:focus .header-details-login-icon {
   fill: var(--blue-300);
 }
 
