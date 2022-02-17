@@ -1491,6 +1491,10 @@ img {
   fill: var(--gray-300);
 }
 
+.header-details-user:active {
+  color: var(--gray-300);
+}
+
 .header-details-link-logout {
   display: flex;
   padding: 6px 0;
