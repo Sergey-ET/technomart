@@ -22,7 +22,7 @@
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page-body">
@@ -317,11 +317,12 @@
         </div>
         <!-- /.services-intro -->
         <div class="services-details">
-          <ul class="services-tabs">
-            <li class="services-tab services-tab-delivery services-tab-active" tabindex="0">Доставка</li>
-            <li class="services-tab services-tab-guarantee" tabindex="0">Гарантия</li>
-            <li class="services-tab services-tab-credit" tabindex="0">Кредит</li>
-          </ul>
+          <div class="services-tabs">
+            <button class="services-tab services-tab-delivery services-tab-active" type="button">Доставка</button>
+            <button class="services-tab services-tab-guarantee" type="button">Гарантия</button>
+            <button class="services-tab services-tab-credit" type="button">Кредит</button>
+          </div>
+          <!-- /.services-tabs -->
           <ul class="services-content">
             <li class="service-content service-content-delivery service-content-active">
               <h3 class="service-title">Доставка</h3>

@@ -1044,12 +1044,11 @@ img {
 }
 
 .services-tabs {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  margin: 0;
   margin-right: 80px;
-  padding: 0;
   width: 240px;
-  list-style: none;
 }
 
 .services-tabs::after {
@@ -1068,7 +1067,10 @@ img {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
+  text-align: left;
+  color: var(--white);
   background-color: var(--blue-400);
+  border: none;
   cursor: pointer;
 }
 
