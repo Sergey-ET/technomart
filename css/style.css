@@ -1049,18 +1049,15 @@ img {
   flex-direction: column;
   row-gap: 1px;
   width: 240px;
+  min-height: 185px;
   margin-right: 80px;
 }
 
-.services-tabs::after {
-  content: "";
+.services-tabs-image {
   position: absolute;
-  width: 10px;
-  height: 279px;
+  height: 150%;
   top: -25%;
   right: 0;
-  background-image: url(../img/tab-line.png);
-  background-repeat: no-repeat;
 }
 
 .services-tab {
@@ -1095,6 +1092,7 @@ img {
 
 .service-content {
   display: none;
+  width: 315px;
 }
 
 .service-content-active {
@@ -1107,7 +1105,7 @@ img {
   width: 468px;
   height: 261px;
   top: 19px;
-  right: 0;
+  right: 1px;
   background-image: url(../img/delivery.png);
   background-repeat: no-repeat;
 }
@@ -1117,8 +1115,8 @@ img {
   position: absolute;
   width: 389px;
   height: 283px;
-  top: 0;
-  right: 0;
+  top: -4px;
+  right: -8px;
   background-image: url(../img/guarantee.png);
   background-repeat: no-repeat;
 }
@@ -1135,6 +1133,7 @@ img {
 }
 
 .service-title {
+  position: relative;
   margin: 0;
   margin-bottom: 27px;
   font-size: 30px;
@@ -1142,9 +1141,11 @@ img {
   font-weight: normal;
   text-transform: uppercase;
   color: var(--blue-400);
+  z-index: 1;
 }
 
 .service-description {
+  position: relative;
   margin: 0;
   font-family: "PT Sans", "Verdana", sans-serif;
   font-style: normal;
@@ -1152,6 +1153,7 @@ img {
   font-size: 13px;
   line-height: 24px;
   color: var(--black);
+  z-index: 1;
 }
 
 .service-button {
@@ -1159,7 +1161,7 @@ img {
   display: block;
   width: 195px;
   margin-top: 26px;
-  padding: 10px 0;
+  padding: 10px 5px;
   border-radius: 2px;
   z-index: 1;
 }
