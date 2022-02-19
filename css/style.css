@@ -94,7 +94,7 @@ img {
 
 .button {
   min-width: 192px;
-  padding: 11px 0 9px 0;
+  padding: 11px 5px 9px;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -774,6 +774,11 @@ img {
   color: var(--blue-400);
 }
 
+.popular-button {
+  cursor: pointer;
+  width: 195px;
+}
+
 .popular-list {
   display: grid;
   grid-template-columns: repeat(4, 220px);
@@ -968,6 +973,7 @@ img {
 
 .manufacturer-button {
   cursor: pointer;
+  width: 195px;
 }
 
 .manufacturer-list {
