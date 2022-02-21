@@ -499,7 +499,7 @@ img {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   display: block;
-  min-width: 135px;
+  width: 135px;
   padding: 10px;
   font-size: 14px;
   line-height: 18px;
@@ -695,33 +695,29 @@ img {
   background-color: var(--red-300);
 }
 
-.promo-slider-button-back {
+.promo-slider-button {
   position: absolute;
   top: 50%;
-  left: 24px;
-  transform: translateY(-30%);
-  padding: 0;
+  transform: translateY(-35%);
+  padding: 30px 20px;
   width: 22px;
   height: 40px;
-  background-image: url(../img/icon-left.svg);
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
 }
 
+.promo-slider-button-back {
+  left: 24px;
+  background-image: url(../img/icon-left.svg);
+  background-position: left center;
+}
+
 .promo-slider-button-forward {
-  position: absolute;
-  top: 50%;
   right: 20px;
-  transform: translateY(-30%);
-  padding: 0;
-  width: 22px;
-  height: 40px;
   background-image: url(../img/icon-right.svg);
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+  background-position: right center;
 }
 
 .promo-slider-pagination {
@@ -741,7 +737,6 @@ img {
   background-color: var(--red-100);
   border: 2px solid var(--white);
   border-radius: 50%;
-  cursor: pointer;
 }
 
 .promo-slider-pagination-button:last-child {
@@ -767,6 +762,7 @@ img {
 
 .popular-title {
   margin: 0;
+  margin-right: 28px;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -964,6 +960,7 @@ img {
 
 .manufacturer-title {
   margin: 0;
+  margin-right: 28px;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
