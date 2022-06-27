@@ -1145,7 +1145,6 @@ img {
   font-weight: normal;
   text-transform: uppercase;
   color: var(--blue-400);
-  z-index: 1;
 }
 
 .service-description {
@@ -1157,7 +1156,6 @@ img {
   font-size: 13px;
   line-height: 24px;
   color: var(--black);
-  z-index: 1;
 }
 
 .service-button {
@@ -1167,7 +1165,6 @@ img {
   margin-top: 26px;
   padding: 10px 5px;
   border-radius: 2px;
-  z-index: 1;
 }
 
 .index-columns {
