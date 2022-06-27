@@ -1,4 +1,4 @@
-# E-shop "Technomart"
+# <img align="left" width="50" height="50" alt="Logo" src="./img/favicons/192.png"> E-shop "Technomart"
 
 Training project at asynchronous course "Profession "Frontend Developer" by [HTML Academy](https://htmlacademy.ru). Project was done in February 2022.
 
